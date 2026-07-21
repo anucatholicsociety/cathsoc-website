@@ -1,0 +1,77 @@
+# Build and deploy the site to GitHub Pages.
+#
+# Runs on every push to main, on demand from the Actions tab, and once a week
+# (so "upcoming events" listings stay fresh even if nobody pushes - past
+# events drop off automatically at build time).
+#
+# One-time repo setup: Settings -> Pages -> Source: "GitHub Actions".
+# The custom domain (anucatholicsociety.com) is set by the CNAME file the
+# build emits; also enter it under Settings -> Pages -> Custom domain and
+# tick "Enforce HTTPS" once DNS is pointing here.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "30 18 * * 0" # weekly rebuild: Sunday 18:30 UTC = Monday ~4:30 am Canberra
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Serialize deploys so two pushes can never race each other.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # ---- HOSTING CONFIGURATION -------------------------------------------
+  # Custom domain at the root (the normal case). To preview from a project
+  # sub-path instead (https://<user>.github.io/<repo>), set:
+  #   NEXT_PUBLIC_BASE_PATH:   /<repo-name>
+  #   NEXT_PUBLIC_SITE_ORIGIN: https://<user>.github.io
+  # The build then rewrites every asset URL, metadata URL, sitemap entry
+  # and calendar link accordingly, and omits the CNAME file automatically.
+  NEXT_PUBLIC_BASE_PATH: ""
+  NEXT_PUBLIC_SITE_ORIGIN: "https://anucatholicsociety.com"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22 # current LTS - pin the major so builds stay reproducible
+          cache: npm
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Build (prebuild regenerates calendars, poster PDF, sitemap)
+        run: npm run build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true # self-enable Pages on first run
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

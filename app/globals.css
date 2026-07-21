@@ -1,0 +1,115 @@
+/* Self-hosted fonts (bundled at build time - no third-party font requests). */
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/cormorant-garamond/500-italic.css";
+@import "@fontsource/source-sans-3/400.css";
+@import "@fontsource/source-sans-3/600.css";
+@import "@fontsource/source-sans-3/700.css";
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme variables. Dark mode swaps the ground and ink; gold brightens for
+   contrast on navy. The .dark class is set before first paint by an inline
+   script in the document head, so there is no flash. */
+:root {
+  --bg: #faf7f0;
+  --bg-soft: #f3eee2;
+  --fg: #26242e;
+  --fg-soft: #4b4956;
+  --rule: #e7e1d2;
+  --accent: #a9852f;
+  --accent-strong: #7e6320;
+  --panel: #2e2d41;
+  --panel-fg: #faf7f0;
+}
+.dark {
+  --bg: #1c1b29;
+  --bg-soft: #232234;
+  --fg: #f3eee2;
+  --fg-soft: #c4bfae;
+  --rule: #3a3950;
+  --accent: #d9b65c;
+  --accent-strong: #d9b65c;
+  --panel: #232234;
+  --panel-fg: #faf7f0;
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  @apply font-body antialiased;
+}
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@layer components {
+  .eyebrow {
+    @apply block text-xs font-semibold uppercase tracking-eyebrow;
+    color: var(--accent-strong);
+  }
+  .display {
+    @apply font-display font-semibold leading-[1.08];
+    letter-spacing: 0.01em;
+  }
+  .rule-gold {
+    border-color: var(--accent);
+  }
+  .prose-block p + p { margin-top: 1em; }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-caps transition-colors;
+  }
+  .btn-solid {
+    background: var(--panel);
+    color: var(--panel-fg);
+  }
+  .btn-solid:hover { background: #232234; }
+  .dark .btn-solid { background: var(--accent); color: #1c1b29; }
+  .dark .btn-solid:hover { background: #e6c878; }
+  .btn-gold {
+    background: var(--accent);
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 0.25); /* keeps light text legible on gold */
+  }
+  .btn-gold:hover { background: var(--accent-strong); }
+  .dark .btn-gold { color: #1c1b29; text-shadow: none; }
+  .btn-line {
+    @apply border;
+    border-color: var(--fg);
+    color: var(--fg);
+  }
+  .btn-line:hover { background: var(--fg); color: var(--bg); }
+  /* Arched photo frame - the Society's poster motif. */
+  .arch {
+    border-radius: 999px 999px 12px 12px;
+    overflow: hidden;
+  }
+}
+
+/* Ruled schedule rows, echoing the "What's on this week" posters. */
+.ruled-row { border-top: 1px solid var(--rule); }
+.ruled-row:last-child { border-bottom: 1px solid var(--rule); }
+
+/* Leaflet tweaks for theme */
+.leaflet-container { font-family: inherit; background: var(--bg-soft); }
+.leaflet-popup-content-wrapper { border-radius: 8px; }
+
+/* Skip link */
+.skip-link {
+  @apply absolute left-4 top-4 z-[100] -translate-y-24 bg-white px-4 py-2 text-sm font-semibold text-ink shadow focus:translate-y-0;
+  transition: transform 0.15s;
+}

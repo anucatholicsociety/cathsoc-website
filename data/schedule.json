@@ -1,0 +1,78 @@
+{
+  "_readme": "The Society's regular weekly schedule during teaching weeks. TO ADD AN ENTRY: copy one of the objects in 'weekly', change the fields, and save - the homepage strip, events page, printable schedule and the subscribable calendar all regenerate from this file at build time. 'day' is Monday..Sunday. Times are 24-hour local Canberra time. 'category' is one of: mass, confession, adoration, prayer, study, social, formation. Set 'liturgy': true for anything sacramental so it is included in the Mass-and-liturgy-only calendar feed.",
+  "_verification": "IMPORTANT: confirm every time below with the chaplain before each semester, then update 'lastVerified'. The site prints this date so visitors know how fresh the information is.",
+
+  "lastVerified": "2026-07-21",
+  "verifiedBy": "ANU Catholic Society Executive",
+  "semesterNote": "Schedule shown is for ANU teaching weeks in Semester 2, 2026. Times can move in teaching breaks and exam periods - check our Instagram for the current week.",
+
+  "weekly": [
+    {
+      "id": "friday-confession",
+      "title": "Confession",
+      "day": "Friday",
+      "start": "16:30",
+      "end": "17:20",
+      "location": "St John the Evangelist Chapel, 51 Daley Road",
+      "category": "confession",
+      "liturgy": true,
+      "description": "The Sacrament of Reconciliation is available before Friday Mass, or by asking the chaplain at any Society event."
+    },
+    {
+      "id": "friday-adoration",
+      "title": "Eucharistic Adoration & Holy Hour",
+      "day": "Friday",
+      "start": "16:30",
+      "end": "17:25",
+      "location": "St John the Evangelist Chapel, 51 Daley Road",
+      "category": "adoration",
+      "liturgy": true,
+      "description": "Quiet prayer before the Blessed Sacrament. Come for five minutes or the whole hour."
+    },
+    {
+      "id": "friday-mass",
+      "title": "Holy Mass",
+      "day": "Friday",
+      "start": "17:30",
+      "end": "18:15",
+      "location": "St John the Evangelist Chapel, 51 Daley Road",
+      "category": "mass",
+      "liturgy": true,
+      "featured": true,
+      "description": "Our weekly Mass on campus - the heart of the Society's week. Everyone is welcome, Catholic or not."
+    },
+    {
+      "id": "friday-fellowship",
+      "title": "Pizza & Fellowship after Mass",
+      "day": "Friday",
+      "start": "18:15",
+      "end": "19:30",
+      "location": "Chapel courtyard / nearby",
+      "category": "social",
+      "liturgy": false,
+      "description": "Stay after Friday Mass for pizza and good conversation. The easiest first event to come along to."
+    },
+    {
+      "id": "weekly-coffee",
+      "title": "Coffee Catch-up",
+      "day": "Wednesday",
+      "start": "10:30",
+      "end": "11:30",
+      "location": "On campus - see Instagram for this week's cafe",
+      "category": "social",
+      "liturgy": false,
+      "description": "A relaxed mid-week coffee. Drop in between classes; no need to stay the whole time."
+    },
+    {
+      "id": "womens-group",
+      "title": "Women's Group",
+      "day": "Tuesday",
+      "start": "17:00",
+      "end": "18:00",
+      "location": "See Instagram for this week's venue",
+      "category": "prayer",
+      "liturgy": false,
+      "description": "Prayer, discussion and friendship for the women of the Society."
+    }
+  ]
+}

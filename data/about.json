@@ -1,0 +1,31 @@
+{
+  "_readme": "Content blocks for the About page. Edit text freely - plain paragraphs, one per list item. 'historyGaps' renders a visible invitation for alumni to help complete the record; remove entries as the history is confirmed.",
+
+  "mission": [
+    "The ANU Catholic Society is the home of Catholic students on campus. As a society with strong Dominican origins, our motto - Fides et Ratio, Faith and Reason - draws from St Thomas Aquinas, who taught that rigorous intellectual inquiry and a life of deep faith are not opposing paths but complementary pursuits that lead to truth.",
+    "In this spirit, the Society provides a nourishing Catholic community that supports ANU students as they grow in faith and deepen their understanding of the world at university.",
+    "We organise a wide range of events: weekly Mass, volunteering initiatives, social gatherings and academic lectures. These provide opportunities for spiritual, intellectual and personal growth, while strengthening the bonds of friendship among our members."
+  ],
+
+  "byTheNumbers": [
+    { "value": "15", "label": "catechumens in the past two years" },
+    { "value": "57%", "label": "of the Archdiocese's current seminarians were associated with the Society" },
+    { "value": "70", "label": "current student members" },
+    { "value": "5,500+", "label": "social media followers" }
+  ],
+
+  "patron": [
+    "Our patron is Pope St John XXIII, whose name is also carried by the Catholic residential college beside our chapel. His commitment to education and social justice is a legacy the Dominican Order has continued at ANU.",
+    "Our motto, Fides et Ratio - Faith and Reason - expresses the conviction at the heart of the Society: that the search for truth in the lecture theatre and the search for God in the chapel are the same search, seen from two sides."
+  ],
+
+  "history": [
+    "Catholic life at ANU has deep roots. The Dominican friars established a presence beside the university, and John XXIII College - founded under Dominican auspices - has been a home for Catholic students since the 1960s. The St John the Evangelist Chapel on Daley Road remains the centre of Catholic worship on campus.",
+    "The Society today continues that tradition: Mass and the sacraments each week, formation in the intellectual tradition of St Thomas Aquinas, service with Caritas and Vinnies, and an open door for every student who walks past."
+  ],
+
+  "historyGaps": [
+    "We are piecing together the Society's own institutional history - including its founding date and its story after 1975. John XXIII College has recently published its history, which records some of the origins of Catholic student life at ANU.",
+    "If you were part of CathSoc in decades past, we would love to hear from you: anucathsoc@gmail.com."
+  ]
+}

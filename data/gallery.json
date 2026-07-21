@@ -1,0 +1,26 @@
+{
+  "_readme": "Photos and Instagram posts for /gallery/ and elsewhere. PHOTOS: drop an image into public/images/photos/ and add an entry with its filename, a caption and honest alt text. INSTAGRAM: paste the post URL from the share button; posts render as official Instagram embeds (loaded lazily, only on this page). Order in each list is display order.",
+
+  "photos": [
+    { "file": "chapel-exterior-day.jpg", "alt": "St John the Evangelist Chapel with its blue tiled roof under a clear Canberra sky", "caption": "St John the Evangelist Chapel, 51 Daley Road - our home on campus" },
+    { "file": "chapel-interior.jpg", "alt": "Interior of the chapel with timber ceiling, crucifix and congregation at Mass", "caption": "Friday evening Mass in the chapel" },
+    { "file": "jurisprudence-lecture.jpg", "alt": "A large audience listening to a panel discussion at the ANU Law School", "caption": "Jurisprudence and Theology lecture with the Hon Justice Steward AC, May 2026" },
+    { "file": "justice-steward.jpg", "alt": "Justice Simon Steward speaking at a lectern at the ANU Law School", "caption": "The Hon Justice Simon Steward AC of the High Court of Australia" },
+    { "file": "nuncio-mass.jpg", "alt": "Archbishop Charles Balvo celebrating Mass at the chapel altar in red vestments", "caption": "The Apostolic Nuncio, Archbishop Charles Balvo, celebrating Mass on campus, October 2025" },
+    { "file": "dominican-retreat.jpg", "alt": "Fr Anthony Walsh OP speaking with students outside the chapel at dusk", "caption": "Dominican retreat with Fr Anthony Walsh OP, May 2026" },
+    { "file": "feast-john-xxiii.jpg", "alt": "A large group photo of students with Fr Laurie Foote OP at John XXIII College", "caption": "Feast of Pope St John XXIII with Fr Laurie Foote OP, October 2025" },
+    { "file": "commencement-address.jpg", "alt": "Archbishop Prowse addressing students at John XXIII College", "caption": "Commencement Mass and address by Archbishop Prowse" },
+    { "file": "pizza-fellowship.jpg", "alt": "Students sharing pizza around a long table after Friday Mass", "caption": "Pizza and fellowship after Friday Mass" },
+    { "file": "coffee-catchup.jpg", "alt": "Students chatting over coffee at a campus cafe", "caption": "Weekly coffee catch-ups" },
+    { "file": "volunteering-stall.jpg", "alt": "Students at a Caritas and Vinnies stall outside the Lowitja O'Donoghue Cultural Centre", "caption": "Volunteering with Caritas and Vinnies" },
+    { "file": "chapel-courtyard.jpg", "alt": "Students talking at picnic tables in the chapel courtyard in autumn", "caption": "Conversation in the chapel courtyard" },
+    { "file": "chapel-dusk.jpg", "alt": "The chapel roofline and cross at dusk with Telstra Tower behind", "caption": "The chapel at dusk, Black Mountain behind" }
+  ],
+
+  "instagram": [
+    { "url": "https://www.instagram.com/p/Da0lhgHFC5v/", "label": "Announcing our 2026 executive" },
+    { "url": "https://www.instagram.com/p/DYUJVf7k_L2/", "label": "Jurisprudence & Theology with Justice Steward" },
+    { "url": "https://www.instagram.com/p/DYMd1wgE0Zl/", "label": "Dominican retreat with Fr Anthony Walsh OP" },
+    { "url": "https://www.instagram.com/p/DP7nvvMk3E2/", "label": "Hosting the Apostolic Nuncio, Archbishop Balvo" }
+  ]
+}

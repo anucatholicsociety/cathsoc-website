@@ -1,0 +1,9 @@
+{
+  "name": "ANU Catholic Society",
+  "short_name": "ANU CathSoc",
+  "icons": [{ "src": "/images/brand/crest-seal.png", "sizes": "688x688", "type": "image/png" }],
+  "theme_color": "#2E2D41",
+  "background_color": "#FAF7F0",
+  "display": "browser",
+  "start_url": "/"
+}

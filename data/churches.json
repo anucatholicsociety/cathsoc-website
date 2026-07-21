@@ -1,0 +1,189 @@
+{
+  "_readme": "Data for the interactive 'Find Mass in Canberra' map AND the auto-generated printable poster PDF - both rebuild from this file, so they can never drift apart. TO ADD A CHURCH: copy an object in 'churches', give it a unique 'id', fill in the fields, and save. 'lat'/'lng' come from right-clicking the spot in Google Maps and copying the numbers. 'adoration.access' is one of: 'public' (walk in), 'keyed' (PIN/key required - say how to get it in notes), 'on-request', 'none'. Leave any list empty ([]) if unknown and it is hidden rather than shown blank.",
+  "_verification": "Mass times change. Confirm each entry against the parish website before each semester and update its 'lastVerified'. The site and the PDF both print a 'confirm with the parish' warning automatically.",
+
+  "notice": "Times are checked each semester but parishes do change them - please confirm with the parish before travelling, especially on public holidays.",
+
+  "churches": [
+    {
+      "id": "st-john-evangelist-anu",
+      "name": "St John the Evangelist Chapel (ANU)",
+      "suburb": "Acton",
+      "address": "51 Daley Road, Acton ACT 2601",
+      "lat": -35.2743,
+      "lng": 149.1166,
+      "tradition": "Campus chapel - ANU Catholic Society & chaplaincy",
+      "mass": {
+        "sunday": [],
+        "saturdayVigil": [],
+        "weekday": ["Friday 5:30 pm (teaching weeks)"]
+      },
+      "confession": ["Friday 4:30-5:20 pm (teaching weeks), or by asking the chaplain"],
+      "adoration": {
+        "times": ["Friday 4:30-5:25 pm (teaching weeks)"],
+        "access": "public",
+        "notes": "Open for Society liturgies; contact us to pray here at other times."
+      },
+      "accessibility": "Step-free entry from Daley Road footpath.",
+      "transportFromANU": "On campus - 10 minute walk from Kambri along Daley Road.",
+      "phone": "",
+      "website": "https://linktr.ee/anucathsoc",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "st-christophers-cathedral",
+      "name": "St Christopher's Cathedral",
+      "suburb": "Forrest (Manuka)",
+      "address": "55 Franklin Street, Forrest ACT 2603",
+      "lat": -35.3191,
+      "lng": 149.1339,
+      "tradition": "Cathedral of the Archdiocese of Canberra and Goulburn",
+      "mass": {
+        "sunday": ["8:00 am", "9:30 am", "11:00 am", "5:00 pm"],
+        "saturdayVigil": ["5:00 pm"],
+        "weekday": ["Mon-Fri 12:15 pm", "Saturday 9:00 am"]
+      },
+      "confession": ["Saturday 11:00 am-12:00 pm", "Saturday 4:00-4:45 pm"],
+      "adoration": {
+        "times": ["Weekdays after 12:15 pm Mass (times vary)"],
+        "access": "public",
+        "notes": "Cathedral open during the day."
+      },
+      "accessibility": "Wheelchair access via side entrance; accessible parking on Franklin Street.",
+      "transportFromANU": "Bus toward Manuka from the City interchange (~20 min) or ~10 min drive.",
+      "phone": "(02) 6239 9846",
+      "website": "https://www.cg.org.au/cathedral",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "st-brigids-dickson",
+      "name": "St Brigid's",
+      "suburb": "Dickson",
+      "address": "2 Bancroft Street, Dickson ACT 2602",
+      "lat": -35.2507,
+      "lng": 149.1394,
+      "tradition": "North Canberra parish",
+      "mass": {
+        "sunday": ["8:00 am"],
+        "saturdayVigil": [],
+        "weekday": []
+      },
+      "confession": ["Before Sunday Mass or by appointment"],
+      "adoration": { "times": [], "access": "on-request", "notes": "" },
+      "accessibility": "Level entry from the car park.",
+      "transportFromANU": "Easy cycle or walk from north-side residences; light rail + short walk from the City.",
+      "phone": "(02) 6248 5925",
+      "website": "https://www.cg.org.au/northcanberra",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "sts-peter-paul-garran",
+      "name": "Sts Peter & Paul (FSSP)",
+      "suburb": "Garran",
+      "address": "18 Garran Place, Garran ACT 2605",
+      "lat": -35.3408,
+      "lng": 149.1083,
+      "tradition": "Traditional Latin Mass - Priestly Fraternity of St Peter",
+      "mass": {
+        "sunday": ["8:00 am (Low Mass)", "10:00 am (Sung Mass)"],
+        "saturdayVigil": [],
+        "weekday": ["See parish bulletin"]
+      },
+      "confession": ["Before each Mass"],
+      "adoration": { "times": [], "access": "on-request", "notes": "" },
+      "accessibility": "Ramp access at main entrance.",
+      "transportFromANU": "Society members regularly carpool - ask on our channels. ~15 min drive.",
+      "phone": "",
+      "website": "https://www.fssp.com.au/canberra",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "st-patricks-braddon",
+      "name": "St Patrick's",
+      "suburb": "Braddon",
+      "address": "1 Donaldson Street, Braddon ACT 2612",
+      "lat": -35.2723,
+      "lng": 149.1360,
+      "tradition": "Historic inner-city church, Canberra Central parish",
+      "mass": {
+        "sunday": ["8:00 am"],
+        "saturdayVigil": [],
+        "weekday": []
+      },
+      "confession": ["By appointment"],
+      "adoration": { "times": [], "access": "none", "notes": "" },
+      "accessibility": "Small step at entrance; assistance available.",
+      "transportFromANU": "20 minute walk from Kambri through the City, or any Northbourne Avenue bus.",
+      "phone": "(02) 6248 5925",
+      "website": "https://www.cg.org.au/canberracentral",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "holy-rosary-watson",
+      "name": "Holy Rosary (Blackfriars)",
+      "suburb": "Watson",
+      "address": "30 Phillip Avenue, Watson ACT 2602",
+      "lat": -35.2385,
+      "lng": 149.1523,
+      "tradition": "Dominican parish - the Society's spiritual roots",
+      "mass": {
+        "sunday": ["10:00 am"],
+        "saturdayVigil": ["5:00 pm"],
+        "weekday": ["Tue-Fri 5:30 pm"]
+      },
+      "confession": ["Saturday 4:15-4:45 pm", "Before weekday Mass on request"],
+      "adoration": { "times": ["First Fridays"], "access": "public", "notes": "" },
+      "accessibility": "Step-free access.",
+      "transportFromANU": "Light rail to EPIC + 15 min walk, or ~10 min drive.",
+      "phone": "(02) 6248 5925",
+      "website": "https://www.cg.org.au/watson",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "st-josephs-oconnor",
+      "name": "St Joseph's",
+      "suburb": "O'Connor",
+      "address": "58 Boronia Drive, O'Connor ACT 2602",
+      "lat": -35.2620,
+      "lng": 149.1128,
+      "tradition": "Inner-north parish",
+      "mass": {
+        "sunday": ["9:15 am"],
+        "saturdayVigil": ["6:00 pm"],
+        "weekday": ["Wed & Fri 9:15 am"]
+      },
+      "confession": ["Saturday 5:30 pm or by appointment"],
+      "adoration": { "times": [], "access": "on-request", "notes": "" },
+      "accessibility": "Level entry.",
+      "transportFromANU": "Closest suburban parish to campus - 25 min walk or short cycle from Daley Road.",
+      "phone": "(02) 6248 5925",
+      "website": "https://www.cg.org.au/northcanberra",
+      "lastVerified": "2026-07-21"
+    },
+    {
+      "id": "st-benedicts-narrabundah",
+      "name": "St Benedict's",
+      "suburb": "Narrabundah",
+      "address": "10 Tallara Parkway, Narrabundah ACT 2604",
+      "lat": -35.3330,
+      "lng": 149.1495,
+      "tradition": "South Canberra parish with adoration chapel",
+      "mass": {
+        "sunday": ["9:00 am"],
+        "saturdayVigil": ["6:00 pm"],
+        "weekday": ["See parish bulletin"]
+      },
+      "confession": ["Saturday before Vigil Mass"],
+      "adoration": {
+        "times": ["Adoration chapel - extended hours"],
+        "access": "keyed",
+        "notes": "Chapel access is by PIN code - contact the parish office to register."
+      },
+      "accessibility": "Ramp access.",
+      "transportFromANU": "~15 min drive; bus via the City and Kingston.",
+      "phone": "(02) 6295 7879",
+      "website": "https://www.cg.org.au/southcanberra",
+      "lastVerified": "2026-07-21"
+    }
+  ]
+}

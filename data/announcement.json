@@ -1,0 +1,11 @@
+{
+  "_readme": "Optional site-wide banner shown under the header on every page. Set 'enabled' to true and fill in the fields for venue changes, cancellations, O-Week notices etc. 'severity' is 'info' (navy) or 'urgent' (gold). Set dates (YYYY-MM-DD) to auto-show/hide, or leave empty to control by hand. Only one banner is supported deliberately - keep it for things that matter.",
+
+  "enabled": false,
+  "severity": "info",
+  "message": "",
+  "linkLabel": "",
+  "linkHref": "",
+  "startDate": "",
+  "endDate": ""
+}

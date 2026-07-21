@@ -1,0 +1,42 @@
+{
+  "_readme": "Questions and answers for the New Here page (rendered as accessible accordions and as FAQPage structured data for search engines). TO ADD: copy an object, write a plain-language question and a short warm answer. Keep answers pastoral and factual; anything sacramental should be checked with the chaplain.",
+
+  "faqs": [
+    {
+      "q": "Do I have to be Catholic to come?",
+      "a": "No. Mass, dinners, talks and socials are open to everyone - Catholic, other traditions, exploring, or just curious. Nobody will quiz you."
+    },
+    {
+      "q": "Can I come alone if I don't know anyone?",
+      "a": "Yes, and many people do exactly that. If you'd like, contact us before you come and a committee member will meet you at the door so you walk in with a friendly face."
+    },
+    {
+      "q": "What should I wear?",
+      "a": "Whatever you'd wear to class is fine. People come straight from lectures, labs and sport."
+    },
+    {
+      "q": "What happens at Friday Mass?",
+      "a": "Confession and quiet adoration from 4:30 pm, Mass at 5:30 pm (about 45 minutes), then pizza in the courtyard. You can come to any part of that on its own."
+    },
+    {
+      "q": "I'm not sure about receiving Communion - is that okay?",
+      "a": "Completely. Plenty of people stay in their seat or come forward with arms crossed for a blessing. Nobody minds and nobody watches."
+    },
+    {
+      "q": "Is there a cost or membership requirement?",
+      "a": "No - everything regular is free and open. Formal membership (via Rubric) supports the Society and gets you voting rights and member perks, but it is never required to attend."
+    },
+    {
+      "q": "I'm an international or postgraduate student - is this for me?",
+      "a": "Very much so. The Society spans undergrads, postgrads, international students and staff, and Mass is the same in every country - it's one of the fastest ways to find your feet in Canberra."
+    },
+    {
+      "q": "I've been away from the Church for a while. Where do I start?",
+      "a": "Just come to Mass, or message us and ask to speak with the chaplain - no explanations required. Confession is available every Friday if and when you want it."
+    },
+    {
+      "q": "I'm not baptised but I'm curious about becoming Catholic. What's the path?",
+      "a": "The path is called OCIA (the Order of Christian Initiation of Adults), run with the local parish - ten catechumens have come through the Society in the current year alone. Start with a conversation: email us or speak with the chaplain, any time of year."
+    }
+  ]
+}

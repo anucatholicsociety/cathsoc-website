@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Generated at build time by scripts/prebuild.mjs (do not commit; regenerated on every build)
+public/calendar/
+public/sitemap.xml
+public/robots.txt
+public/downloads/finding-mass-in-canberra.pdf
+
+# Env files (none are secret here, but keep local overrides out of the repo)
+.env*.local
+
+# Editors and tooling junk
+.idea/
+.vscode/
+.claude/
+claude/
+*.iml
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.eslintcache
+*.tsbuildinfo
+next-env.d.ts
+/public/CNAME

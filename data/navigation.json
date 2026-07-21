@@ -1,0 +1,44 @@
+{
+  "_readme": "Header and footer navigation. To add a page: create the page (or ask a developer once), then add { \"label\": \"...\", \"href\": \"/its-path/\" } to the relevant list. hrefs are root-relative and must end with a trailing slash; the site adds the hosting base path automatically.",
+
+  "header": [
+    { "label": "Catholic Life", "href": "/catholic-life/" },
+    { "label": "Find Mass", "href": "/find-mass/" },
+    { "label": "Events", "href": "/events/" },
+    { "label": "New Here?", "href": "/new-here/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+
+  "headerCta": { "label": "Get Involved", "href": "/get-involved/" },
+
+  "footerColumns": [
+    {
+      "heading": "Catholic Life",
+      "links": [
+        { "label": "Mass & liturgy at ANU", "href": "/catholic-life/" },
+        { "label": "Find Mass in Canberra", "href": "/find-mass/" },
+        { "label": "What to expect at Mass", "href": "/new-here/#what-to-expect" },
+        { "label": "Weekly schedule", "href": "/events/#weekly" }
+      ]
+    },
+    {
+      "heading": "Community",
+      "links": [
+        { "label": "Get involved", "href": "/get-involved/" },
+        { "label": "Events", "href": "/events/" },
+        { "label": "Gallery", "href": "/gallery/" },
+        { "label": "New here?", "href": "/new-here/" }
+      ]
+    },
+    {
+      "heading": "About",
+      "links": [
+        { "label": "Mission & history", "href": "/about/" },
+        { "label": "2026 Executive", "href": "/executive/" },
+        { "label": "Downloads", "href": "/downloads/" },
+        { "label": "Contact", "href": "/contact/" }
+      ]
+    }
+  ]
+}

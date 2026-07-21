@@ -1,0 +1,24 @@
+{
+  "_readme": "Files offered on /downloads/. TO ADD A FILE: drop it into public/downloads/ and add an entry here with the exact filename in 'file'. If the file is not present yet the entry still renders with a 'coming soon' note instead of a broken link. 'generated: true' marks files the build creates automatically from data - do not upload those by hand.",
+
+  "items": [
+    {
+      "title": "Finding Mass in Canberra - one-page poster",
+      "file": "finding-mass-in-canberra.pdf",
+      "generated": true,
+      "description": "A printable A4 summary of Mass, confession and adoration times near ANU. Regenerated automatically from the map data on every build, so it is always in sync with the website."
+    },
+    {
+      "title": "Annual Report 2025-2026",
+      "file": "anu-catholic-society-annual-report-2025-2026.pdf",
+      "generated": false,
+      "description": "A year in the life of the Society: the Dominican retreat, the Jurisprudence and Theology lecture, the Apostolic Nuncio's visit, and more."
+    },
+    {
+      "title": "Mass booklet",
+      "file": "mass-booklet.pdf",
+      "generated": false,
+      "description": "The Order of Mass with responses - handy if you are new or returning. (Drop the PDF into public/downloads/ as mass-booklet.pdf to publish it.)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "_readme": "One-off and special events. TO ADD AN EVENT: copy an object below, give it a unique lowercase 'id' (letters, numbers, hyphens), set date (YYYY-MM-DD) and 24-hour times, and save. Events automatically appear on the homepage and events page while upcoming, drop off after their date passes, get their own .ics calendar file at /calendar/events/<id>.ics, and join the subscribable calendar. 'image' is optional - a filename inside public/images/photos/ - and degrades to a styled text block if missing. Set 'registrationUrl' only if sign-up is needed.",
+  "_pastEvents": "Past events do not need to be deleted - they disappear from listings automatically and keep working as gallery captions. Delete them once a year to keep the file tidy.",
+
+  "upcoming": [
+    {
+      "id": "sem2-week1-mass-2026",
+      "title": "First Friday Mass of Semester 2",
+      "date": "2026-07-31",
+      "start": "17:30",
+      "end": "19:30",
+      "location": "St John the Evangelist Chapel, 51 Daley Road",
+      "category": "mass",
+      "cost": "Free",
+      "description": "Start the semester at the altar. Mass at 5:30 pm with confession and adoration beforehand from 4:30 pm, followed by pizza and fellowship in the courtyard. If it is your first time, come - someone will say hello.",
+      "image": "chapel-interior.jpg",
+      "registrationUrl": ""
+    },
+    {
+      "id": "market-day-2026-s2",
+      "title": "Bush Week Market Day Stall",
+      "date": "2026-07-29",
+      "start": "10:00",
+      "end": "14:00",
+      "location": "Kambri, ANU",
+      "category": "social",
+      "cost": "Free",
+      "description": "Find our stall at Bush Week Market Day, meet the committee, grab a lolly and sign up for membership. New and returning students equally welcome.",
+      "image": "volunteering-stall.jpg",
+      "registrationUrl": ""
+    }
+  ]
+}

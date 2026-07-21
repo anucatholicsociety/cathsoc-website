@@ -1,0 +1,49 @@
+{
+  "_readme": "Site-wide settings. Edit values here and the whole site updates. Fields starting with an underscore are notes for maintainers and are ignored by the site.",
+
+  "name": "ANU Catholic Society",
+  "legalName": "Australian National University Catholic Society",
+  "motto": "Fides et Ratio",
+  "mottoTranslation": "Faith and Reason",
+  "tagline": "Faith and friendship at the heart of Australia's national university.",
+  "description": "The home of Catholic students at ANU: weekly Mass, prayer, formation, friendship and service, gathered around the St John the Evangelist Chapel on Daley Road.",
+  "_description": "Kept near 110-120 characters where used for social previews so link previews do not truncate.",
+  "socialDescription": "Catholic life at ANU: weekly Mass, prayer, formation and friendship at the St John the Evangelist Chapel, Daley Road.",
+
+  "email": "anucathsoc@gmail.com",
+  "authorCredit": {
+    "_note": "Small out-of-the-way credit in the footer. The prominent credit is the executive credit below.",
+    "name": "Peter Woodhead (Secretary)",
+    "email": "peterwoodhead@protonmail.com"
+  },
+  "executiveCredit": "ANU Catholic Society Executive, 2026",
+
+  "primaryLocation": {
+    "name": "St John the Evangelist Chapel",
+    "address": "51 Daley Road, Acton ACT 2601",
+    "campusNote": "On ANU campus, next to John XXIII College on Daley Road.",
+    "lat": -35.2743,
+    "lng": 149.1166,
+    "mapsUrl": "https://maps.google.com/?q=St+John+the+Evangelist+Chapel+51+Daley+Road+Acton"
+  },
+
+  "links": {
+    "_note": "External links. Update the linktree/instagram/rubric URLs here only - every button on the site reads from this block.",
+    "linktree": "https://linktr.ee/anucathsoc",
+    "instagram": "https://www.instagram.com/anucatholicsociety",
+    "instagramHandle": "@anucatholicsociety",
+    "membership": "https://campus.hellorubric.com/?tab=memberships&s=8876",
+    "membershipLabel": "Join via Rubric",
+    "oldSite": "https://anucathsoc.wixsite.com/catholic-connect",
+    "johnsHistoryBook": ""
+  },
+  "_johnsHistoryBook": "Paste the URL of the John XXIII College history book page here when known and it will appear on the About page. Leave empty to hide the link.",
+
+  "contactForm": {
+    "_note": "Static sites cannot receive form posts by themselves. Create a free form at https://formspree.io, then paste its endpoint here (looks like https://formspree.io/f/abcdwxyz). While this is empty the contact page automatically falls back to an email link - nothing breaks.",
+    "formspreeEndpoint": ""
+  },
+
+  "affiliations": "The ANU Catholic Society is a student society affiliated with the ANU Students' Association. Sacraments are celebrated by our chaplaincy and local parishes of the Archdiocese of Canberra and Goulburn; the Society does not administer parish schedules.",
+  "emergencyNote": "This website and our inboxes are not monitored around the clock and are not an emergency or counselling service. In an emergency call 000. ANU Wellbeing support: 1300 050 327. Lifeline: 13 11 14."
+}
