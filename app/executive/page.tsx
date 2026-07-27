@@ -46,7 +46,7 @@ export default function Executive() {
       <h2 className="eyebrow mt-14">Chaplaincy</h2>
       <ul className="mt-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">{chaplaincy.map(card)}</ul>
 
-      <h2 className="eyebrow mt-14">Student Committee</h2>
+      <h2 className="eyebrow mt-14">Student Leaders in the Executive</h2>
       <ul className="mt-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">{committee.map(card)}</ul>
     </Section>
   );

@@ -4,11 +4,11 @@
   "year": 2026,
   "email": "anucathsoc@gmail.com",
   "members": [
-    { "name": "Fr Eden Langlands", "role": "Chaplain", "group": "chaplaincy", "photo": "", "bio": "Our chaplain celebrates the Society's liturgies and is available for confession, spiritual direction and a friendly conversation." },
-    { "name": "Kyle Petrusa", "role": "President", "group": "committee", "photo": "", "bio": "" },
-    { "name": "Leon Simonetti", "role": "Vice-President", "group": "committee", "photo": "", "bio": "" },
-    { "name": "Samara Hayes", "role": "Treasurer", "group": "committee", "photo": "", "bio": "" },
-    { "name": "Peter Woodhead", "role": "Secretary", "group": "committee", "photo": "", "bio": "" },
-    { "name": "Maria Rego", "role": "Communications", "group": "committee", "photo": "", "bio": "" }
+    { "name": "Fr Eden Langlands", "role": "Chaplain", "group": "chaplaincy", "photo": "eden.jpg", "bio": "Our chaplain celebrates the Society's liturgies and is available for confession, spiritual direction and a friendly conversation." },
+    { "name": "Kyle Petrusa", "role": "President", "group": "committee", "photo": "kyle.jpg", "bio": "" },
+    { "name": "Leon Simonetti", "role": "Vice-President", "group": "committee", "photo": "leon.jpg", "bio": "" },
+    { "name": "Samara Hayes", "role": "Treasurer", "group": "committee", "photo": "samara.jpg", "bio": "" },
+    { "name": "Peter Woodhead", "role": "Secretary", "group": "committee", "photo": "peter.jpg", "bio": "" },
+    { "name": "Maria Rego", "role": "Communications", "group": "committee", "photo": "maria.jpg", "bio": "" }
   ]
 }
