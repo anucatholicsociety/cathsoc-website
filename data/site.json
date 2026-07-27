@@ -41,9 +41,9 @@
 
   "contactForm": {
     "_note": "Static sites cannot receive form posts by themselves. Create a free form at https://formspree.io, then paste its endpoint here (looks like https://formspree.io/f/abcdwxyz). While this is empty the contact page automatically falls back to an email link - nothing breaks.",
-    "formspreeEndpoint": ""
+    "formspreeEndpoint": "https://formspree.io/f/mrenrrng"
   },
 
-  "affiliations": "The ANU Catholic Society is a student society affiliated with the ANU Students' Association. Sacraments are celebrated by our chaplaincy and local parishes of the Archdiocese of Canberra and Goulburn; the Society does not administer parish schedules.",
+  "affiliations": "The ANU Catholic Society is a student society affiliated with the ANU Students' Association. Our chapel is part of the St John XXIII College at ANU. Sacraments are celebrated by our chaplaincy and local parishes of the Archdiocese of Canberra and Goulburn; the Society does not administer parish schedules.",
   "emergencyNote": "This website and our inboxes are not monitored around the clock and are not an emergency or counselling service. In an emergency call 000. ANU Wellbeing support: 1300 050 327. Lifeline: 13 11 14."
 }
