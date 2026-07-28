@@ -153,7 +153,7 @@
         "weekday": ["Tue-Fri: 9:15 am, Saturday: 8:30 am"]
       },
       "confession": ["Friday: 8:15 am - 9:00 am, Saturday: 5:15 pm - 5:45 pm"],
-      "adoration": { ["times": "Friday: 8:15 am - 9:00 am"], "access": ["open"], "notes": "" },
+      "adoration": { "times": ["Friday: 8:15 am - 9:00 am"], "access": ["public"], "notes": "" },
       "accessibility": "Level entry.",
       "transportFromANU": "Closest suburban parish to campus - 30 min walk or short cycle from Daley Road.",
       "phone": "(02) 6248 5925",
