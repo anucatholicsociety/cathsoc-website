@@ -50,7 +50,7 @@
         "notes": "Cathedral open during the day."
       },
       "accessibility": "Wheelchair access via side entrance; accessible parking on Franklin Street.",
-      "transportFromANU": "Bus toward Manuka from the City interchange (~20 min) or ~10 min drive.",
+      "transportFromANU": "Bus toward Manuka from the City interchange (~25 min) or ~10 min drive.",
       "phone": "(02) 6239 9846",
       "website": "https://www.cg.org.au/cathedral",
       "lastVerified": "2026-07-21"
@@ -64,12 +64,12 @@
       "lng": 149.1394,
       "tradition": "North Canberra parish",
       "mass": {
-        "sunday": ["8:00 am"],
-        "saturdayVigil": [],
-        "weekday": []
+        "sunday": ["9:30 am"],
+        "saturdayVigil": ["6:00 pm"],
+        "weekday": ["Tue–Sat 9:00am"]
       },
-      "confession": ["Before Sunday Mass or by appointment"],
-      "adoration": { "times": [], "access": "on-request", "notes": "" },
+      "confession": ["Saturday: 9:30am – 10:00am, 5:30pm – 5:50pm"],
+      "adoration": { "times": [Wednesday 08:00 am – 8:00pm, Saturday: 9:30am – 10:00am], "access": "open", "notes": "" },
       "accessibility": "Level entry from the car park.",
       "transportFromANU": "Easy cycle or walk from north-side residences; light rail + short walk from the City.",
       "phone": "(02) 6248 5925",
@@ -89,7 +89,7 @@
         "saturdayVigil": [],
         "weekday": ["See parish bulletin"]
       },
-      "confession": ["Before each Mass"],
+      "confession": ["Before, (and if priest available during) Mass"],
       "adoration": { "times": [], "access": "on-request", "notes": "" },
       "accessibility": "Ramp access at main entrance.",
       "transportFromANU": "Society members regularly carpool - ask on our channels. ~15 min drive.",
@@ -108,9 +108,9 @@
       "mass": {
         "sunday": ["8:00 am"],
         "saturdayVigil": [],
-        "weekday": []
+        "weekday": ["Tue-Fri: 12:30 pm"]
       },
-      "confession": ["By appointment"],
+      "confession": ["Friday 11:30 am - 12:30 pm"],
       "adoration": { "times": [], "access": "none", "notes": "" },
       "accessibility": "Small step at entrance; assistance available.",
       "transportFromANU": "20 minute walk from Kambri through the City, or any Northbourne Avenue bus.",
@@ -125,13 +125,13 @@
       "address": "30 Phillip Avenue, Watson ACT 2602",
       "lat": -35.2385,
       "lng": 149.1523,
-      "tradition": "Dominican parish - the Society's spiritual roots",
+      "tradition": "Former Dominican parish - the Society's spiritual roots",
       "mass": {
-        "sunday": ["10:00 am"],
+        "sunday": ["10:00 am, 5:00 pm"],
         "saturdayVigil": ["5:00 pm"],
-        "weekday": ["Tue-Fri 5:30 pm"]
+        "weekday": ["Tue-Fri: 5:30 pm"]
       },
-      "confession": ["Saturday 4:15-4:45 pm", "Before weekday Mass on request"],
+      "confession": ["Saturday 4:00-4:30 pm", "Before weekday Mass on request"],
       "adoration": { "times": ["First Fridays"], "access": "public", "notes": "" },
       "accessibility": "Step-free access.",
       "transportFromANU": "Light rail to EPIC + 15 min walk, or ~10 min drive.",
@@ -148,14 +148,14 @@
       "lng": 149.1128,
       "tradition": "Inner-north parish",
       "mass": {
-        "sunday": ["9:15 am"],
+        "sunday": ["8:30 am"],
         "saturdayVigil": ["6:00 pm"],
-        "weekday": ["Wed & Fri 9:15 am"]
+        "weekday": ["Tue-Fri: 9:15 am, Saturday: 8:30 am"]
       },
-      "confession": ["Saturday 5:30 pm or by appointment"],
-      "adoration": { "times": [], "access": "on-request", "notes": "" },
+      "confession": ["Friday: 8:15 am - 9:00 am, Saturday: 5:15 pm - 5:45 pm"],
+      "adoration": { "times": Friday: 8:15 am - 9:00 am, "access": "open", "notes": "" },
       "accessibility": "Level entry.",
-      "transportFromANU": "Closest suburban parish to campus - 25 min walk or short cycle from Daley Road.",
+      "transportFromANU": "Closest suburban parish to campus - 30 min walk or short cycle from Daley Road.",
       "phone": "(02) 6248 5925",
       "website": "https://www.cg.org.au/northcanberra",
       "lastVerified": "2026-07-21"
@@ -169,7 +169,7 @@
       "lng": 149.1495,
       "tradition": "South Canberra parish with adoration chapel",
       "mass": {
-        "sunday": ["9:00 am"],
+        "sunday": ["9:00 am, 6:00 pm (Charismatic Mass)"],
         "saturdayVigil": ["6:00 pm"],
         "weekday": ["See parish bulletin"]
       },
