@@ -111,7 +111,9 @@ function calendar(name, veventBlocks) {
   ].join("\r\n");
 }
 
-const weeklyEvents = schedule.weekly.map((w) => {
+// Entries whose time moves week to week (w.timeNote) carry placeholder clock times
+// for sorting only, so they are deliberately left out of the subscribable feeds.
+const weeklyEvents = schedule.weekly.filter((w) => !w.timeNote).map((w) => {
   const d = nextDateFor(w.day);
   return {
     entry: w,

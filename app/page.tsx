@@ -11,7 +11,7 @@ const nextSteps = [
   { title: "I want to explore Catholicism", text: "Curious, sceptical or somewhere in between — questions are welcome here. No sign-up required.", href: "/new-here/" },
   { title: "I'd like to return to the faith", text: "Been away a while? You are not the first. Start with Mass, or a quiet word with the chaplain.", href: "/catholic-life/#returning" },
   { title: "I'd like to speak with someone", text: "Message us to meet a committee member before your first event, or to talk with the chaplain privately.", href: "/contact/" },
-  { title: "I want to become Catholic", text: "Ten catechumens are currently preparing through the Society. The path is called OCIA — start with a conversation.", href: "/catholic-life/#become-catholic" },
+  { title: "I want to become Catholic", text: "The path is called OCIA. Our chaplain may run it, or we point you to a nearby parish — start with a conversation.", href: "/catholic-life/#become-catholic" },
 ];
 
 export default function Home() {
@@ -61,11 +61,12 @@ export default function Home() {
             <p>
               The Society gathers at the <strong>St John the Evangelist Chapel</strong> at 51 Daley Road — a short walk
               from Kambri, beside John XXIII College. Friday evenings are the heart of our week: confession and quiet
-              adoration from 4:30&nbsp;pm, Mass at 5:30&nbsp;pm, then pizza in the courtyard.
+              adoration from 5:30&nbsp;pm, Mass at 6:00&nbsp;pm, then pizza in the chaplaincy room.
             </p>
             <p>
-              Between liturgies you will find us at coffee catch-ups, Bible studies, lectures and dinners around campus
-              and Canberra. You can simply drop in to anything — no membership, booking or prior knowledge required.
+              Between liturgies you will find us at coffee catch-ups, women&rsquo;s groups, formation sessions, public
+              lectures, and social events around campus and Canberra. You can simply drop in to anything — no
+              membership, booking or prior knowledge required.
             </p>
             <p className="!mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
               <a href={site.primaryLocation.mapsUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-gold underline-offset-4">
@@ -143,10 +144,10 @@ export default function Home() {
       {/* GALLERY TEASER */}
       <Section eyebrow="Life Together" title="A year in the Society">
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
-          {gallery.photos.slice(2, 6).map((p) => (
-            <figure key={p.file}>
-              <img src={assetPath(`/images/photos/${p.file}`)} alt={p.alt} loading="lazy" className="aspect-[4/3] w-full rounded object-cover" />
-              <figcaption className="mt-1.5 text-xs leading-snug" style={{ color: "var(--fg-soft)" }}>{p.caption}</figcaption>
+          {gallery.highlights.slice(0, 4).map((h) => (
+            <figure key={h.file}>
+              <img src={assetPath(`/images/photos/${h.file}`)} alt={h.alt} loading="lazy" className="aspect-[4/3] w-full rounded object-cover" />
+              <figcaption className="mt-1.5 text-xs leading-snug" style={{ color: "var(--fg-soft)" }}>{h.title}</figcaption>
             </figure>
           ))}
         </div>

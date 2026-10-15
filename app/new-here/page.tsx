@@ -33,14 +33,15 @@ export default function NewHere() {
           <div>
             <h2 className="font-display text-2xl font-semibold">The easiest first event</h2>
             <p className="mt-3 max-w-prose leading-relaxed">
-              <strong>Friday Mass and pizza.</strong> Mass at 5:30 pm in the St John the Evangelist Chapel
-              (51 Daley Road, next to John XXIII College), about 45 minutes, then pizza in the courtyard. Arrive a few
+              <strong>Friday Mass and pizza.</strong> Mass at 6:00 pm in the St John the Evangelist Chapel
+              (51 Daley Road, next to John XXIII College), about 45 minutes, with confession and quiet adoration from
+              5:30 pm beforehand. Afterwards we walk over to the ANU Chaplaincy Room in Kambri for pizza. Arrive a few
               minutes early and sit anywhere; stay for one slice or the whole evening. No registration, no cost, no
               expectations.
             </p>
             <p className="mt-4 max-w-prose leading-relaxed">
-              Prefer something without a liturgy first? Come to a <strong>coffee catch-up</strong> — order a drink,
-              say you are new, and you are in.
+              Prefer something without a liturgy first? Come to a <strong>coffee catch-up</strong> on Wednesday
+              morning at Badger &amp; Co in Kambri — say you are new, and the coffee is on us.
             </p>
             <h2 className="mt-8 font-display text-2xl font-semibold">Meet someone before you come</h2>
             <p className="mt-3 max-w-prose leading-relaxed">
@@ -53,10 +54,10 @@ export default function NewHere() {
           </div>
           <figure className="self-start justify-self-center">
             <div className="arch max-w-sm border-4 border-gold/40">
-              <img src={assetPath("/images/photos/chapel-courtyard.jpg")} alt="Students chatting at picnic tables in the chapel courtyard" loading="lazy" />
+              <img src={assetPath("/images/photos/pizza-fellowship.jpg")} alt="Students sharing pizza and conversation in the ANU Chaplaincy Room after Friday Mass" loading="lazy" />
             </div>
             <figcaption className="mt-3 text-center text-sm" style={{ color: "var(--fg-soft)" }}>
-              The chapel courtyard — where Friday evenings end up
+              The ANU Chaplaincy Room — where Friday evenings end up
             </figcaption>
           </figure>
         </div>

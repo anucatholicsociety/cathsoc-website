@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Weekly Mass, confession, Eucharistic adoration and prayer on the ANU campus, plus pathways to explore or return to the Catholic faith.",
 };
 
-const liturgical = ["mass", "confession", "adoration", "prayer"];
+const liturgical = ["mass", "confession", "adoration"];
 
 export default function CatholicLife() {
   const weekly = [...schedule.weekly].sort(
@@ -41,7 +41,7 @@ export default function CatholicLife() {
                 <tr key={w.id} className="ruled-row align-top">
                   <th scope="row" className="py-3 pr-4 font-display text-lg font-semibold">{w.title}</th>
                   <td className="py-3 pr-4">{w.day}</td>
-                  <td className="py-3 pr-4 whitespace-nowrap">{fmtTime(w.start)}–{fmtTime(w.end)}</td>
+                  <td className="py-3 pr-4 whitespace-nowrap">{w.timeNote || `${fmtTime(w.start)}–${fmtTime(w.end)}`}</td>
                   <td className="py-3 text-sm" style={{ color: "var(--fg-soft)" }}>{w.location}</td>
                 </tr>
               ))}
@@ -49,6 +49,11 @@ export default function CatholicLife() {
           </table>
           <p className="mt-3 text-sm" style={{ color: "var(--fg-soft)" }}>
             {schedule.semesterNote} Schedule maintained by the {schedule.verifiedBy}; last verified {schedule.lastVerified}.
+          </p>
+          <p className="mt-4 max-w-prose text-sm" style={{ color: "var(--fg-soft)" }}>
+            A <strong>Sunday Mass</strong> is also offered in the chapel occasionally during semester — watch our{" "}
+            <a href={site.links.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold underline decoration-gold underline-offset-4">Instagram</a>{" "}
+            for the dates.
           </p>
           <p className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
             <a href={assetPath("/calendar/mass-and-liturgy.ics")} className="underline decoration-gold underline-offset-4">Subscribe: Mass & liturgy calendar (.ics)</a>
@@ -61,8 +66,8 @@ export default function CatholicLife() {
         <div className="mt-6 grid items-start gap-10 lg:grid-cols-2">
           <div className="prose-block max-w-prose leading-relaxed">
             <p>
-              Confession is available <strong>every Friday from 4:30 pm</strong> before Mass, in the chapel — or at any
-              time by asking the chaplain. If it has been years, say exactly that; the priest will walk you through it
+              Confession is available <strong>every Friday from 5:30 pm</strong>, in the half hour before the 6:00 pm
+              Mass, in the chapel — or at any time by asking the chaplain. If it has been years, say exactly that; the priest will walk you through it
               gladly. There is no queueing system and no judgement, only mercy.
             </p>
             <p>
@@ -73,8 +78,9 @@ export default function CatholicLife() {
           <div className="prose-block max-w-prose leading-relaxed">
             <h3 className="font-display text-2xl font-semibold">Eucharistic Adoration</h3>
             <p className="mt-3">
-              The Blessed Sacrament is exposed on Fridays from 4:30 pm alongside confessions. Come for five quiet
-              minutes between classes or stay the whole hour — many members call it the stillest point of their week.
+              The Blessed Sacrament is exposed on Fridays from 5:30 pm alongside confessions, for the half hour before
+              Mass. Come for five quiet minutes between classes or stay for all of it — many members call it the
+              stillest point of their week.
             </p>
           </div>
         </div>
@@ -85,9 +91,17 @@ export default function CatholicLife() {
           <div className="prose-block max-w-prose leading-relaxed text-ivory/90">
             <p>
               True to our Dominican roots, the Society treats the intellectual life as part of the spiritual life. Each
-              year brings formation evenings with Dominican friars, guest lectures — recently the Hon Justice Steward AC
-              of the High Court on jurisprudence and theology — Bible studies, and retreats on the thought of St Thomas
-              Aquinas.
+              year brings guest lectures — the Roncalli Lecture, and recently the Hon Justice Steward AC of the High
+              Court on jurisprudence and theology — alongside two regular strands of formation.
+            </p>
+            <p>
+              <strong>Faith formation with the MGLs.</strong> A series run with the Missionaries of God&rsquo;s Love,
+              working through the foundations of the faith with plenty of room for questions — come for one session or
+              all of them.
+            </p>
+            <p>
+              <strong>Dominican retreats.</strong> Each semester the Dominican friars lead a retreat for the Society:
+              talks, prayer and silence, in the tradition the Society grew out of.
             </p>
             <p>
               Recordings, reading suggestions and upcoming talks are shared on our channels; no background knowledge is
@@ -109,13 +123,18 @@ export default function CatholicLife() {
           <div className="prose-block max-w-prose leading-relaxed">
             <p>
               Adults become Catholic through <strong>OCIA</strong> — the Order of Christian Initiation of Adults — a
-              gentle, unhurried journey of learning and discernment run with the local parish. It typically spans an
-              academic year, meeting weekly, and leads (if and when you choose) to baptism or reception into the
-              Church, Confirmation and First Communion.
+              gentle, unhurried journey of learning and discernment. It typically spans an academic year, meeting
+              weekly, and leads (if and when you choose) to baptism or reception into the Church, Confirmation and
+              First Communion.
             </p>
             <p>
-              You can enquire at any time of year, and enquiring commits you to nothing. Ten catechumens are currently
-              preparing through the Society — you would not be walking alone.
+              How it runs depends on how many people are seeking it in a given year: if there are enough of you, our
+              chaplain may offer OCIA through the Society; otherwise we will point you to a nearby parish running it
+              and stay alongside you while you go through it.
+            </p>
+            <p>
+              You can enquire at any time of year, and enquiring commits you to nothing — you would not be walking
+              alone.
             </p>
             <p className="!mt-5 text-sm font-semibold">
               <a href={assetPath("/contact/")} className="underline decoration-gold underline-offset-4">Start a confidential conversation →</a>

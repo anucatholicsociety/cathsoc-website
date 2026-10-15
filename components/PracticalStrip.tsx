@@ -29,13 +29,13 @@ export default function PracticalStrip() {
   const cells: { label: string; primary: string; secondary: string; href: string }[] = [
     {
       label: "Next Mass",
-      primary: mass ? `${relativeDay(mass.w, now!)}, ${fmtTime(mass.w.start)}` : `Friday, ${fmtTime("17:30")}`,
+      primary: mass ? `${relativeDay(mass.w, now!)}, ${fmtTime(mass.w.start)}` : `Friday, ${fmtTime("18:00")}`,
       secondary: "St John the Evangelist Chapel",
       href: "/catholic-life/",
     },
     {
       label: "Next Confession",
-      primary: confession ? `${relativeDay(confession.w, now!)}, ${fmtTime(confession.w.start)}` : `Friday, ${fmtTime("16:30")}`,
+      primary: confession ? `${relativeDay(confession.w, now!)}, ${fmtTime(confession.w.start)}` : `Friday, ${fmtTime("17:30")}`,
       secondary: "Before Mass, in the chapel",
       href: "/catholic-life/#confession",
     },

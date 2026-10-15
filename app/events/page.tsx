@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { schedule, events, site } from "@/lib/data";
+import { schedule, events, site, gallery } from "@/lib/data";
 import { assetPath } from "@/lib/paths";
 import { fmtTime, DAY_ORDER, upcomingOnly } from "@/lib/schedule";
 import { Section } from "@/components/Section";
@@ -68,7 +68,7 @@ export default function EventsPage() {
                     <span className="block text-sm text-ivory/70">{w.location}</span>
                   </th>
                   <td className="py-3 pr-4">{w.day}</td>
-                  <td className="py-3 pr-4 whitespace-nowrap">{fmtTime(w.start)}–{fmtTime(w.end)}</td>
+                  <td className="py-3 pr-4 whitespace-nowrap">{w.timeNote || `${fmtTime(w.start)}–${fmtTime(w.end)}`}</td>
                   <td className="py-3 text-sm text-gold-bright">{CATEGORY_LABEL[w.category] ?? w.category}</td>
                 </tr>
               ))}
@@ -82,15 +82,11 @@ export default function EventsPage() {
 
       <Section eyebrow="Looking Back" title="Recent highlights">
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
-          {[
-            { img: "jurisprudence-lecture.jpg", alt: "Audience at the Jurisprudence and Theology lecture", t: "Jurisprudence & Theology", d: "The Hon Justice Steward AC of the High Court addressed ~200 people with ANU Law School, May 2026." },
-            { img: "nuncio-mass.jpg", alt: "Archbishop Balvo celebrating Mass", t: "The Apostolic Nuncio", d: "Archbishop Charles Balvo celebrated Mass on campus and joined us for an evening of conversation, October 2025." },
-            { img: "dominican-retreat.jpg", alt: "Fr Anthony Walsh with students outside the chapel", t: "Dominican Retreat", d: "Fr Anthony Walsh OP led a retreat on study as a form of prayer, May 2026." },
-          ].map((h) => (
-            <article key={h.t}>
-              <img src={assetPath(`/images/photos/${h.img}`)} alt={h.alt} loading="lazy" className="aspect-[4/3] w-full rounded-lg object-cover" />
-              <h3 className="mt-3 font-display text-xl font-semibold">{h.t}</h3>
-              <p className="mt-1 text-sm leading-relaxed" style={{ color: "var(--fg-soft)" }}>{h.d}</p>
+          {gallery.highlights.map((h) => (
+            <article key={h.title}>
+              <img src={assetPath(`/images/photos/${h.file}`)} alt={h.alt} loading="lazy" className="aspect-[4/3] w-full rounded-lg object-cover" />
+              <h3 className="mt-3 font-display text-xl font-semibold">{h.title}</h3>
+              <p className="mt-1 text-sm leading-relaxed" style={{ color: "var(--fg-soft)" }}>{h.blurb}</p>
             </article>
           ))}
         </div>

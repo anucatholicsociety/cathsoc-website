@@ -3,9 +3,9 @@
 
   "enabled": true,
   "severity": "info",
-  "message": "Join us at ANU! Come find our stall in Bush Week Market Day - we'll be there throughout the day, so meet the team, grab a flier, become a member, and more!",
-  "linkLabel": "Check out our Instagram!",
-  "linkHref": "https://www.instagram.com/anucatholicsociety/",
-  "startDate": "2026-07-27",
-  "endDate": "2026-07-30"
+  "message": "The Roncalli Lecture returns after almost a decade - David Smith MP on Contemporary Questions of Human Dignity, Wednesday 21 October, 6:00-7:15 pm, Hedley Bull Building Theatre 1. Free, all welcome.",
+  "linkLabel": "Register free",
+  "linkHref": "https://events.humanitix.com/roncalli-lecture-on-human-dignity-2026",
+  "startDate": "2026-10-01",
+  "endDate": "2026-10-21"
 }

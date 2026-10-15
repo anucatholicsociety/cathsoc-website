@@ -18,19 +18,19 @@ const levels = [
   {
     heading: "Join something regular",
     blurb: "A weekly rhythm and familiar faces.",
-    items: ["Weekly Mass, adoration and confession", "Women's group", "Bible study and formation evenings", "Coffee catch-ups"],
+    items: ["Weekly Mass, adoration and confession", "Women's group", "Formation evenings and retreats", "Coffee catch-ups"],
     cta: { label: "Weekly schedule", href: "/events/#weekly" },
   },
   {
     heading: "Help occasionally",
     blurb: "Give an hour when it suits.",
-    items: ["Event setup and cooking", "Welcoming newcomers at the door", "Photography and social media", "Volunteering with Caritas and Vinnies"],
+    items: ["Event setup and pack-down", "Welcoming newcomers at the door", "Photography and social media", "Volunteering with Caritas and Vinnies"],
     cta: { label: "Offer a hand", href: "/contact/" },
   },
   {
     heading: "Take responsibility",
     blurb: "Shape the Society's future.",
-    items: ["Run an event or a study group", "Join a subcommittee", "Stand for the executive at the AGM"],
+    items: ["Run an event or a formation session", "Help organise a lecture or retreat", "Stand for the executive at the AGM"],
     cta: { label: "Talk to the exec", href: "/contact/" },
   },
 ];

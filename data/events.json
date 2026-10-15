@@ -4,6 +4,19 @@
 
   "upcoming": [
     {
+      "id": "roncalli-lecture-2026",
+      "title": "The Roncalli Lecture: Contemporary Questions of Human Dignity",
+      "date": "2026-10-21",
+      "start": "18:00",
+      "end": "19:15",
+      "location": "Hedley Bull Building, Theatre 1, ANU",
+      "category": "formation",
+      "cost": "Free",
+      "description": "The Roncalli Lecture is an ANU tradition first established at John XXIII College in 1991, and we are delighted to be reviving it after almost a decade. This year David Smith MP, Co-Chair of the Parliamentary Christian Fellowship, speaks on Contemporary Questions of Human Dignity - how the Catholic tradition reads human dignity, public life, public policy and the common good. Free, and open to everyone; registration is appreciated.",
+      "image": "jurisprudence-lecture.jpg",
+      "registrationUrl": "https://events.humanitix.com/roncalli-lecture-on-human-dignity-2026"
+    },
+    {
       "id": "sem2-week1-mass-2026",
       "title": "Semester 2 Welcome Mass with Archbishop Christopher",
       "date": "2026-07-31",
@@ -12,7 +25,7 @@
       "location": "St John the Evangelist Chapel, 51 Daley Road",
       "category": "mass",
       "cost": "Free",
-      "description": "Start the semester at the altar. Mass at 6:00 pm with confession and adoration beforehand from 5:00 pm, followed by our Friday Fellowship get-together. If it is your first time, come - meet us and say hello.",
+      "description": "Start the semester at the altar. Mass at 6:00 pm with confession and adoration beforehand from 5:30 pm, followed by our Friday Fellowship get-together. If it is your first time, come - meet us and say hello.",
       "image": "chapel-interior.jpg",
       "registrationUrl": ""
     },

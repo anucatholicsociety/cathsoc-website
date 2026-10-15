@@ -14,13 +14,13 @@
       "lng": 149.1166,
       "tradition": "Campus chapel - ANU Catholic Society & chaplaincy",
       "mass": {
-        "sunday": [],
+        "sunday": ["Occasionally during semester - see our Instagram for the dates"],
         "saturdayVigil": [],
         "weekday": ["Friday 6:00 pm (teaching weeks)"]
       },
-      "confession": ["Friday 5:00-6:00 pm (teaching weeks), or by asking the chaplain"],
+      "confession": ["Friday 5:30-6:00 pm (teaching weeks), or by asking the chaplain"],
       "adoration": {
-        "times": ["Friday 5:00-6:00 pm (teaching weeks)"],
+        "times": ["Friday 5:30-6:00 pm (teaching weeks)"],
         "access": "public",
         "notes": "Open for Society liturgies; contact us to pray here at other times."
       },
@@ -28,7 +28,7 @@
       "transportFromANU": "On campus - 10 minute walk from Kambri along Daley Road.",
       "phone": "",
       "website": "https://linktr.ee/anucathsoc",
-      "lastVerified": "2026-07-21"
+      "lastVerified": "2026-10-16"
     },
     {
       "id": "st-christophers-cathedral",
