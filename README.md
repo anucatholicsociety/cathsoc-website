@@ -90,10 +90,39 @@ npx serve out   # preview the production build
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs from the lockfile, regenerates all derived files, builds, and deploys to GitHub Pages. Deploys are serialized (no race between two pushes) and the site also **rebuilds itself weekly** so past events fall off listings even during quiet weeks.
 
+> ⚠️ **If a push does not deploy, check the workflow is still enabled.** GitHub disables any workflow with a `schedule:` trigger after **60 days without repository activity**, and a disabled workflow ignores *every* trigger, pushes included. Symptom: your commit is on `main`, but no run appears under Actions. Fix:
+>
+> ```bash
+> gh workflow list --all                      # look for "disabled_inactivity"
+> gh workflow enable "Deploy to GitHub Pages"
+> gh workflow run deploy.yml --ref main       # then kick off a build
+> ```
+>
+> This happens most often over the summer break. Any push re-arms the 60-day clock.
+
 **One-time repository setup**
-1. Settings → Pages → Source: **GitHub Actions**.
-2. Settings → Pages → Custom domain: `anucatholicsociety.com`, then tick **Enforce HTTPS** once DNS resolves.
-3. DNS at your registrar: `A` records for the apex to GitHub Pages IPs (`185.199.108.153`, `.109.`, `.110.`, `.111.`) and a `CNAME` record for `www` → `<org>.github.io`. The build writes the `CNAME` file into the site automatically.
+1. Settings → Pages → Source: **GitHub Actions**. If this is ever switched back to "Deploy from a branch", Pages serves the repository root instead of the build — and because `out/` is gitignored there is nothing there but `README.md`, so the live site becomes a rendered copy of this file. Check with `gh api repos/<org>/<repo>/pages -q .build_type`; it must say `workflow`, not `legacy`.
+2. Settings → Pages → Custom domain: `anucatholicsociety.com`. The build writes the `CNAME` file into the site automatically.
+3. DNS — **see the section below**. The production domain is proxied through Cloudflare, so the GitHub Pages IPs and the "Enforce HTTPS" checkbox described in GitHub's own documentation do not apply to it.
+
+**DNS and HTTPS (production: Cloudflare in front of GitHub Pages)**
+
+`anucatholicsociety.com` does **not** resolve to GitHub. It resolves to Cloudflare, which proxies requests through to GitHub Pages and terminates TLS itself:
+
+```bash
+$ dig +short anucatholicsociety.com A
+172.67.128.96      # Cloudflare
+104.21.0.232       # Cloudflare
+```
+
+Consequences worth knowing before you change anything:
+
+- **GitHub's "Enforce HTTPS" checkbox is unavailable and always will be, while Cloudflare is in front.** GitHub only issues a certificate for a domain that resolves to its own IPs, so there is no certificate for it to enforce — the API returns `The certificate does not exist yet` and `https_certificate.state` is `null`. This is expected, not a misconfiguration. The certificate actually served is Cloudflare's (issuer: Google Trust Services).
+- **The HTTP→HTTPS redirect lives in Cloudflare**, under SSL/TLS → Edge Certificates → **Always Use HTTPS**. Verify with `curl -sI http://anucatholicsociety.com/` — you want a `301` to the `https://` URL, not a `200`.
+- **Check the Cloudflare encryption mode**, under SSL/TLS → Overview. It must be **Full**; on *Flexible*, the Cloudflare→GitHub leg travels unencrypted.
+- **Cloudflare caches aggressively.** After a deploy, a stale page usually means the Cloudflare edge cache, not a failed build — purge it from the Cloudflare dashboard, or compare against the `*.github.io` origin URL, which bypasses Cloudflare entirely.
+
+If you ever remove Cloudflare and point the domain straight at GitHub, the original setup is: `A` records for the apex to `185.199.108.153`, `.109.`, `.110.` and `.111.`, a `CNAME` for `www` → `<org>.github.io`, and then GitHub's **Enforce HTTPS** checkbox becomes available once DNS has propagated.
 
 **Hosting somewhere else / on a sub-path.** The same source builds for any host by changing two environment values (in the workflow's `env:` block, or in the shell for local builds):
 
